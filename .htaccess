@@ -1,0 +1,15 @@
+# Activar RewriteEngine
+RewriteEngine on
+ 
+# Reescribir la URL solicitada por el usuario
+
+RewriteRule ^DB/?$ Database/Config/CreateAll.php
+RewriteRule ^(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2
+RewriteRule ^(\w+)/(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2&Parameter1=$3
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2&Parameter1=$3&Parameter2=$4
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2&Parameter1=$3&Parameter2=$4&Parameter3=$5
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2&Parameter1=$3&Parameter2=$4&Parameter3=$5&Parameter4=$6
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2&Parameter1=$3&Parameter2=$4&Parameter3=$5&Parameter4=$6&Parameter5=$7 
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2&Parameter1=$3&Parameter2=$4&Parameter3=$5&Parameter4=$6&Parameter5=$7&Parameter6=$8 
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ Core/Processor.php?Controller=$1&View=$2&Parameter1=$3&Parameter2=$4&Parameter3=$5&Parameter4=$6&Parameter5=$7&Parameter6=$8&Parameter7=$9 
+
